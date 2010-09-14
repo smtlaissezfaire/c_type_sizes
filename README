@@ -1,0 +1,19 @@
+$ make
+gcc main.c -o type_sizes
+$ file type_sizes
+type_sizes: Mach-O 64-bit executable x86_64
+$ ./type_sizes
+size of char: 1
+size of int: 4
+size of long int: 8
+size of float: 4
+size of double: 8
+size of struct with one element: char: 1
+size of struct with two elements: char + int: 8
+
+size of pointer to char: 8
+size of pointer to int: 8
+size of pointer to float: 8
+size of pointer to double: 8
+size of pointer of struct with one element: char: 8
+size of pointer of struct with two elements char + int: 8
